@@ -1,0 +1,51 @@
+create data base quizdb;
+use quizdb;
+create table login(
+ID varchar(20) primary key,
+Password varchar(30));
+create table result(
+ID varchar(20),
+ipresult varchar(20),
+gkresult varchar(20));
+create table gk(
+SNo int(11),
+questions varchar(200),
+a varchar(200),
+b varchar(100),
+c varchar(100),
+d varchar(100),
+Result varchar(1));
+create table ip(
+SNo int(11),
+questions varchar(200),
+a varchar(200),
+b varchar(100),
+c varchar(100),
+d varchar(100),
+Result varchar(1));
+insert into gk values(
+1,"Grand Central Terminal, Park Avenue, New York is the world's","largest railway station","highest railway station",
+"	longest railway station","None of the above","a");
+insert into gk values(2,"Entomology is the science that studies",
+
+"	Behavior of human beings",
+"	Insects",
+"The origin and history of technical and scientific terms",
+"The formation of rocks","b");
+insert into gk values(3,"Eritrea, which became the 182nd member of the UN in 1993, is in the continent of",
+
+"	Asia",
+"	Africa",
+"Europe",
+"Australia","b")
+insert into ip values(1,"Garampani sanctuary is located at",
+
+"	Junagarh, Gujarat",
+"Diphu, Assam",
+"	Kohima, Nagaland",	"Gangtok, Sikkim","b");
+insert into ip values(2,"For which of the following disciplines is Nobel Prize awarded?",
+
+"	Physics and Chemistry",
+"	Physiology or Medicine",
+"	Literature, Peace and Economics",
+"All of the above","d");
